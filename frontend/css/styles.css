@@ -1,0 +1,23 @@
+body {
+	background-color: #222222;
+	color: grey;
+}
+
+.card {
+	color: #ABABAB;
+	background-color: #333333;
+}
+
+.unselectable{
+	user-select: none;
+	-moz-user-select: none;
+	-khtml-user-select: none;
+	-webkit-user-select: none;
+	-o-user-select: none;
+}
+
+.btn-login {
+    color: #212529;
+    background-color: #F79E1B !important;
+    border-color: #F79E1B !important;
+}
