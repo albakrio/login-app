@@ -81,7 +81,7 @@ server.listen(port, () => {
 });
 
 function validateUsername(req, res, next) {
-	const username = req.body.username ?? '';
+	const username = req.body.username ? req.body.username : '';
 
 	if (username === '') {
 		return res.status(400).json({ message: 'username is required' });
@@ -97,7 +97,7 @@ function validateUsername(req, res, next) {
 }
 
 function validatePassword(req, res, next) {
-	const password = req.body.password ?? '';
+	const password = req.body.password ? req.body.password : '';
 
 	if (password === '') {
 		return res.status(400).json({ message: 'password is required' });
